@@ -4,32 +4,32 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>Welcome to jjang-gu's Talk</title>
   </head>
 
-  <body>
+  <body id="login-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No service</span>
         <i class="fas fa-wifi"></i>
       </div>
-      <div class="status-bar__column"><span>18:43</span></div>
 
+      <div class="status-bar__column"><span>9:27</span></div>
       <div class="status-bar__column">
         <span>100%</span>
         <i class="fas fa-battery-full"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <div>
-      <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
-        <p class="welcome-header__text">
-          If you have a Kakao Account, log in with your email or phone number.
-        </p>
-      </header>
-    </div>
-    <form action="friends.html" method="get" id="login-form">
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to jjang-gu's Talk</h1>
+      <p class="welcome-header__text">
+        If you have a Kakao Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="post" id="login-form">
       <input type="text" placeholder="Email or phone number" />
       <input type="password" placeholder="password" />
       <input type="submit" value="Log In" />
@@ -37,10 +37,20 @@
       <a herf="#">Find Kakao Account or Password</a>
     </form>
 
+    <div id="no-mobile">
+      <div id="no-mobile__screen"></div>
+      <img
+        src="https://i.pinimg.com/originals/1c/59/a9/1c59a9ac2a348d628c7557345c68cca2.jpg"
+        alt=""
+      />
+      <span>Your screen is super big...</span>
+    </div>
+
+    <div id="background"></div>
+
     <script
       src="https://kit.fontawesome.com/bb6390a4b2.js"
       crossorigin="anonymous"
-      `
     ></script>
   </body>
 </html>

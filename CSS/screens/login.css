@@ -6,14 +6,19 @@
   align-items: center;
 }
 .welcome-header__title {
-  margin-bottom: 30px;
-  font-size: 20px;
+  margin-bottom: 50px;
+  font-size: 30px;
   font-weight: 600;
 }
 .welcome-header__text {
   width: 48%;
   opacity: 0.7;
   margin-bottom: 85px;
+  font-size: 17.5px;
+}
+#login-body {
+  background-image: url(https://i.pinimg.com/originals/73/5c/c0/735cc0e841c0dbced1e0bdb4b395f35b.jpg);
+  background-size: 100% 1050px;
 }
 #login-form {
   display: flex;
@@ -21,15 +26,19 @@
   margin: 0px 20px;
 }
 #login-form input {
+  font-family: "Hachi Maru Pop", cursive;
   border: none;
+  border-radius: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 18px;
+  font-weight: 600;
   padding: 20px 0px;
   margin-bottom: 20px;
   transition: border-color 1s ease-in-out;
+  background-color: rgba(255, 255, 255, 0);
 }
 #login-form input::placeholder {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.5);
 }
 #login-form input:focus {
   outline: none;
@@ -39,16 +48,17 @@
 }
 #login-form input:not([type="submit"]) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  transition: border-color 1s ease-in-out;
 }
 #login-form input[type="submit"] {
-  background-color: var(--yellow);
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(250, 225, 0);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
 }
 #login-form a {
   text-align: center;
-  color: inherit;
+  color: black;
   font-size: 15px;
+  font-weight: 600;
 }
